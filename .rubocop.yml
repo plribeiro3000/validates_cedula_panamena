@@ -1,13 +1,14 @@
 AllCops:
   TargetRubyVersion: 2.6
 
-Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: double_quotes
+Metrics/BlockLength:
+  Enabled: false
 
-Style/StringLiteralsInInterpolation:
-  Enabled: true
-  EnforcedStyle: double_quotes
+Metrics/LineLength:
+  Max: 150
 
-Layout/LineLength:
-  Max: 120
+Metrics/MethodLength:
+  Max: 25
+
+Style/Documentation:
+  Enabled: false
