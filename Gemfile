@@ -2,11 +2,5 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in validates_cedula_panamena.gemspec
+# Specify your gem's dependencies in validates_panamanian_identity.gemspec
 gemspec
-
-gem "rake", "~> 13.0"
-
-gem "rspec", "~> 3.0"
-
-gem "rubocop", "~> 1.21"

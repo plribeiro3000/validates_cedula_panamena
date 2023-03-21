@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    validates_cedula_panamena (0.1.0)
+    validates_panamanian_identity (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -71,7 +71,7 @@ DEPENDENCIES
   rubocop (~> 1.21)
   rubocop-rspec
   shoulda-matchers
-  validates_cedula_panamena!
+  validates_panamanian_identity!
 
 BUNDLED WITH
    2.3.26

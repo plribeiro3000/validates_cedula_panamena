@@ -1,12 +1,11 @@
 # frozen_string_literal: true
 
-require "validates_cedula_panamena"
+require 'rspec'
+require 'active_model'
+require 'shoulda-matchers'
 
 RSpec.configure do |config|
-  # Enable flags like --only-failures and --next-failure
-  config.example_status_persistence_file_path = ".rspec_status"
-
-  # Disable RSpec exposing methods globally on `Module` and `main`
+  config.include Shoulda::Matchers::ActiveModel
   config.disable_monkey_patching!
 
   config.expect_with :rspec do |c|
