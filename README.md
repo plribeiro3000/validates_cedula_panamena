@@ -1,8 +1,6 @@
 # ValidatesPanamanianIdentity
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/validates_panamanian_identity`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This projects aims to validate Panamanian Identity (Cédula de Panamá).
 
 ## Installation
 
@@ -22,7 +20,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Just use as any other validator:
+
+```ruby
+class User < ActiveRecord::Base
+  validates :identity, panamanian_identity: true
+end
+```
+
+## Testing
+
+Require the matcher:
+
+```ruby
+require 'validates_panamanian_identity/require_a_valid_panamanian_identity_matcher'
+```
+
+Use in your tests:
+
+```ruby
+it { is_expected.to require_a_valid_panamanian_identity } # It will test the attribute :identity by default
+it { is_expected.to require_a_valid_panamanian_identity(:id) } # It will test the attribute :id
+```
 
 ## Development
 
